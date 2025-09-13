@@ -13,10 +13,16 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* full screen height */
       background: #f7f7f7;
       color: #333;
     }
@@ -39,7 +45,8 @@
       color: #f1f1f1;
     }
 
-    section {
+    main {
+      flex: 1; /* push footer down */
       padding: 80px 0;
       text-align: center;
     }
@@ -52,6 +59,7 @@
       font-size: 18px;
       text-decoration: none;
       margin-top: 30px;
+      display: inline-block;
       transition: background 0.3s ease;
     }
 
@@ -64,6 +72,7 @@
       justify-content: center;
       gap: 30px;
       margin-top: 40px;
+      flex-wrap: wrap;
     }
 
     .tech-stack img {
@@ -101,7 +110,7 @@
   </header>
 
   <!-- Main Section -->
-  <section>
+  <main>
     <h2>What We Do</h2>
     <p>Rekonsol is a digital solutions provider that change the way you work. Whether it’s software, design, or IT solutions, we’re here to turn your ideas into reality.</p>
     
@@ -115,7 +124,7 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
       <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Docker_%28container_engine%29_logo.png" alt="Docker">
     </div>
-  </section>
+  </main>
 
   <!-- Footer Section -->
   <footer>
